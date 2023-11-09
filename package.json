@@ -15,7 +15,7 @@
     "@mui/material": "^5.14.15",
     "@stripe/firestore-stripe-payments": "^0.0.6",
     "@stripe/stripe-js": "^2.1.11",
-    "firebase": "^10.5.2",
+    "firebase": "^9.0.0",
     "next": "14.0.0",
     "next-transpile-modules": "^10.0.1",
     "react": "^18",
