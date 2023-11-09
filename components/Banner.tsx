@@ -4,7 +4,7 @@ import { Movie } from "../typings";
 import { useState, useEffect } from "react";
 import { FaPlay } from "react-icons/fa";
 import { InformationCircleIcon } from "@heroicons/react/solid";
-import { useRecoilState } from 'recoil';
+import { useRecoilState } from "recoil";
 import { modalState, movieState } from "../atoms/modalAtom";
 
 interface Props {
@@ -45,7 +45,14 @@ function Banner({ netflixOriginals }: Props) {
       </p>
 
       <div className="flex space-x-3">
-        <button type="button" className="bannerButton bg-white text-black">
+        <button
+          type="button"
+          className="bannerButton bg-white text-black"
+          onClick={() => {
+            setCurrentMovie(movie);
+            setShowModal(true);
+          }}
+        >
           <FaPlay className="h-4 w-4 text-black md:h-7 md:w-7" /> Play
         </button>
         <button
